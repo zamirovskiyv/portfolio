@@ -3,10 +3,12 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Skill} from "./skill/Skill";
+import {Conteiner} from "../../../components/Conteiner";
 
 const Skills = () => {
     return (
         <StyledSkills>
+            <Conteiner>
             <SectionTitle>My Skills</SectionTitle>
             <FlexWrapper wrap={'wrap'} justify={'space-between'}>
                 <Skill iconId={'html'}
@@ -45,7 +47,7 @@ const Skills = () => {
 
 
             </FlexWrapper>
-
+            </Conteiner>
         </StyledSkills>
     );
 };
@@ -53,7 +55,5 @@ const Skills = () => {
 export default Skills;
 
 const StyledSkills = styled.section`
-    background-color: #cac5c5;
-    min-height: 100vh;
 
 `
